@@ -8,6 +8,16 @@ PDFSmartRename 是一个利用OCR和 AI 技术自动重命名 PDF 文件的工�
 - **AI标题生成**：利用Google的Gemini API根据提取的文本内容自动生成文件标题。
 - **批量处理**：支持遍历指定目录下的所有PDF文件，并自动重命名。
 
+## 获取 Gemini API Key
+
+- 打开 [https://makersuite.google.com/](https://makersuite.google.com/)
+- 用 Google 账号登录
+- 点击 `Get API Key` -> `Create API key in new project` 保存好 key
+
+**注意事项**
+
+- 目前该服务不支持香港IP，[查看支持的区域](https://ai.google.dev/available_regions)
+- 由于 IP （如多人共享 IP）或者频率的关系，可能会被谷歌云判定为滥用，导致 API Key 或者 谷歌云账户被禁用，请谨慎使用，或者使用小号。
 
 ## 安装
 本工具依赖于几个关键的Python库：`fitz` (PyMuPDF)、`PIL`、`pytesseract`、以及`google.generativeai`。你可以通过以下命令安装这些依赖项：
