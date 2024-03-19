@@ -8,44 +8,21 @@ PDFSmartRename 是一个利用OCR和 AI 技术自动重命名 PDF 文件的工�
 - **AI标题生成**：利用Google的Gemini API根据提取的文本内容自动生成文件标题。
 - **批量处理**：支持遍历指定目录下的所有PDF文件，并自动重命名。
 
-## 如何使用
 
-### 环境准备
+## 安装
+本工具依赖于几个关键的Python库：`fitz` (PyMuPDF)、`PIL`、`pytesseract`、以及`google.generativeai`。你可以通过以下命令安装这些依赖项：
+```
+pip install PyMuPDF Pillow pytesseract google-generativeai-sdk
+```
+请注意，`pytesseract` 可能还需要你在系统上安装Tesseract-OCR引擎。
 
-确保你的系统已安装以下依赖：
+## 使用方法
 
-- Python 3
-- PyMuPDF
-- Pillow
-- pytesseract
-- Google Cloud Platform账号（用于访问Gemini API）
+1. 克隆此仓库到本地。
+2. 确保你已经获取了必要的API密钥，并且已经安装了所有依赖。
+3. 修改脚本中的`directory_path`和`your_api_key`变量，分别设置为你的PDF文件目录和API密钥。
+4. 运行脚本。
 
-### 安装
-
-1. 克隆仓库到本地：
-   ```
-   git clone https://github.com/yourusername/PDFSmartRename.git
-   ```
-2. 进入项目目录，安装所需的Python库：
-   ```
-   cd PDFSmartRename
-   pip install -r requirements.txt
-   ```
-
-### 配置
-
-- 在使用OCR功能前，你可能需要配置Tesseract的路径：
-  ```python
-  pytesseract.pytesseract.tesseract_cmd = r'<full_path_to_your_tesseract_executable>'
-  ```
-- 确保你有一个有效的Google Cloud Platform API密钥，并替换脚本中的`YOUR_API_KEY_HERE`占位符。
-
-### 使用
-
-- 执行以下命令，开始自动重命名目录下的PDF文件：
-  ```
-  python pdf_smart_rename.py
-  ```
 
 ## 贡献
 
