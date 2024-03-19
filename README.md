@@ -1,4 +1,4 @@
-# PDF-Smart-Rename
+# PDFs-Smart-Rename
 PDFSmartRename 是一个利用OCR和 AI 技术自动重命名 PDF 文件的工具。它通过提取 PDF 文件的第一页文本，使用 Gemini API 生成合适的文件标题，并重命名 PDF 以便更容易识别和管理。
 
 ## 特点
