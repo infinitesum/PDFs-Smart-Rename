@@ -28,6 +28,9 @@ pip install PyMuPDF Pillow pytesseract google-generativeai-sdk
 python pdf_smart_rename.py
 ```
 
+## 注意事项
+在使用 PDF-Smart-Rename 进行文件重命名之前，强烈建议对所有待处理的PDF文件进行备份。
+
 ## 配置
 如果你的Tesseract-OCR没有安装在默认路径，你可能需要在脚本中指定`pytesseract`的路径：
 
