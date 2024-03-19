@@ -24,9 +24,21 @@ pip install PyMuPDF Pillow pytesseract google-generativeai-sdk
 4. 运行脚本。
 
 
+```
+python PDFRenamerGemini.py
+```
+
+## 配置
+如果你的Tesseract-OCR没有安装在默认路径，你可能需要在脚本中指定`pytesseract`的路径：
+
+```python
+# 配置Tesseract的路径，如果需要的话
+pytesseract.pytesseract.tesseract_cmd = r'<full_path_to_your_tesseract_executable>'
+```
+
 ## 贡献
 
-我们欢迎任何形式的贡献，无论是功能请求、bug报告还是代码贡献。请通过GitHub issue或pull request与我们联系。
+欢迎通过Pull Requests或Issues提供改进意见和报告错误。
 
 ## 许可
 
