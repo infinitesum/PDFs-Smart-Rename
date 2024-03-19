@@ -25,7 +25,7 @@ pip install PyMuPDF Pillow pytesseract google-generativeai-sdk
 
 
 ```
-python PDFRenamerGemini.py
+python pdf_smart_rename.py
 ```
 
 ## 配置
