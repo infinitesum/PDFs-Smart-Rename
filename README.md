@@ -19,6 +19,9 @@ PDFSmartRename 是一个利用OCR和 AI 技术自动重命名 PDF 文件的工�
 - 目前该服务不支持香港IP，[查看支持的区域](https://ai.google.dev/available_regions)
 - 由于 IP （如多人共享 IP）或者频率的关系，可能会被谷歌云判定为滥用，导致 API Key 或者 谷歌云账户被禁用，请谨慎使用，或者使用小号。
 
+**防风控**
+- 2024-04-01 更新防风控，不再通过 `google-generativeai` 库来访问了，尝试通过自己设置地址访问（用了CF Worker 的默认地址）
+
 ## 安装
 本工具依赖于几个关键的Python库：`fitz` (PyMuPDF)、`PIL`、`pytesseract`、以及`google.generativeai`。你可以通过以下命令安装这些依赖项：
 ```
